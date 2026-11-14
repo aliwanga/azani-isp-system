@@ -204,3 +204,22 @@ $("menuBtn").addEventListener("click", () => $("nav").classList.toggle("open"));
 $("nav").addEventListener("click", () => $("nav").classList.remove("open"));
 
 render();
+
+// Installable app (PWA)
+let installPrompt = null;
+window.addEventListener("beforeinstallprompt", (e) => {
+  e.preventDefault();
+  installPrompt = e;
+  $("installBtn").hidden = false;
+});
+$("installBtn").addEventListener("click", async () => {
+  if (!installPrompt) return;
+  installPrompt.prompt();
+  await installPrompt.userChoice;
+  installPrompt = null;
+  $("installBtn").hidden = true;
+});
+window.addEventListener("appinstalled", () => { $("installBtn").hidden = true; toast("App installed"); });
+if ("serviceWorker" in navigator) {
+  window.addEventListener("load", () => navigator.serviceWorker.register("sw.js").catch(() => {}));
+}
