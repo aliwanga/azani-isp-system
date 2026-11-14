@@ -1,48 +1,46 @@
-# AZANI ISP SYSTEM
+AZANI ISP SYSTEM
 
-An internet service provider (ISP) management website built with HTML, CSS and JavaScript for the KCSE Computer Studies Paper 3 (Project).
+A web-based management system for an internet service provider (ISP), built with HTML, CSS and JavaScript as a KCSE Computer Studies Paper 3 project.
 
-## Features
-- Register, search, filter, sort and delete customers
-- Four internet packages with automatic monthly billing
-- Mark payments Paid/Unpaid and Suspend/Activate connections with one click
-- Live dashboard: total customers, active connections, revenue collected, outstanding balance
-- Package distribution chart
-- Input validation (required fields, Kenyan phone numbers, unique account numbers)
-- Export customers to CSV (opens in Excel)
-- Light and dark mode
-- Responsive design for phones, tablets and computers
-- Data saved in the browser using localStorage
+Live demo: https://aliwanga.github.io/azani-isp-system/
 
-## Files
-| File | Purpose |
-|------|---------|
-| `index.html` | Page structure |
-| `style.css` | Styling, themes and responsive layout |
-| `script.js` | Logic, validation and storage |
-| `manifest.webmanifest` | App name, colours and icons |
-| `sw.js` | Offline support (service worker) |
-| `icons/` | App icons |
+About the project
 
-## Install as an app (PWA)
-Once the site is live on GitHub Pages (HTTPS), open it in Chrome or Edge:
-- **Computer:** click the **Install App** button (or the install icon in the address bar).
-- **Android:** Chrome menu > **Install app** / **Add to Home screen**.
-- **iPhone:** Safari > Share > **Add to Home Screen**.
+AZANI ISP SYSTEM helps a small internet provider keep track of its customers, packages, payments and connection status from one dashboard, replacing paper records.
 
-The app then opens in its own window and works offline. Note: installing needs the site served over HTTPS (GitHub Pages) or localhost, not by double-clicking `index.html`.
+Features
+Register, search, filter, sort and delete customers
+Four internet packages with automatic monthly billing
+Mark payments Paid/Unpaid and Suspend/Activate connections with one click
+Live dashboard: total customers, active connections, revenue collected and outstanding balance
+Package distribution chart
+Input validation (required fields, Kenyan phone numbers, unique account numbers)
+Export customer records to CSV (opens in Excel)
+Light and dark mode
+Responsive design for phones, tablets and computers
+Installable as an app, with offline support
+Data saved in the browser using localStorage
+Technologies used
+HTML5 for structure
+CSS3 for styling and layout
+JavaScript for logic, validation and storage
+Progressive Web App (manifest and service worker) for installation
+Project files
+File	Purpose
+index.html	Page structure
+style.css	Styling, themes and responsive layout
+script.js	Logic, validation and storage
+manifest.webmanifest	App name, colours and icons
+sw.js	Offline support
+icons/	App icons
+How to use
+Open the live demo link above.
+Fill in the customer form and click Register Customer.
+Click a Payment or Status badge in the table to change it.
+Use Export CSV to download the records.
 
-## Run locally
-Open `index.html` in any browser. No installation needed.
-
-## Publish on GitHub Pages
-1. Create a new repository on GitHub (e.g. `azani-isp-system`).
-2. Upload all files and the `icons` folder.
-3. Go to **Settings > Pages**.
-4. Under **Branch**, choose `main` and `/ (root)`, then **Save**.
-5. Your site will be live at `https://<your-username>.github.io/azani-isp-system/`.
-
----
-&copy; 2026 ACPS HUB. All rights reserved.
+© 2026 ACPS HUB. All rights reserved.
+Developed by Allan.
+Building smart solutions for better communities through technology and innovation.
 Developed by Allan.
 Building smart solutions for better communities through technology and innovation.
